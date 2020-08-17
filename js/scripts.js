@@ -10,6 +10,12 @@ $(document).ready(function() {
     favoriteThings.push(thing2);
     favoriteThings.push(thing3);
     favoriteThings.push(thing4);
-    console.log(favoriteThings);
+    let favoriteThingsNew = [];
+    favoriteThingsNew.push(favoriteThings[1]);
+    favoriteThingsNew.push(favoriteThings[0]);
+    favoriteThingsNew.push(favoriteThings[2]);
+    $("ul#results").append("<li>" + favoriteThingsNew[0] + "</li>");
+    $("ul#results").append("<li>" + favoriteThingsNew[1] + "</li>");
+    $("ul#results").append("<li>" + favoriteThingsNew[2] + "</li>");
   })
 })
